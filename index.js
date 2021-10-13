@@ -1,6 +1,6 @@
 //Constants and required resources
 const fs = require('fs')
-const inquirer = require('inquirer');
+const {userName, email, projName, description, motivation, intention, problemSolver, standOut, license} = require('inquirer');
 
 //Questions to ask to populate readme
 inquirer.prompt([
@@ -10,11 +10,15 @@ inquirer.prompt([
         name: 'userName',
     }, {
         type: 'input',
-        message: "Project name",
+        message: 'What is your email?',
+        name: 'email',
+    }, {
+        type: 'input',
+        message: "Project name:",
         name: 'projName'
     }, {
         type: 'input',
-        message: 'Briefly describe your project',
+        message: 'Briefly describe your project:',
         name: 'description',
     }, {
         type: 'input',
@@ -35,7 +39,7 @@ inquirer.prompt([
     }, {
         type: 'input',
         message: 'What makes your project stand out?',
-        name: 'description',
+        name: 'standOut',
     }, {
         type: "list",
         message: "Chose the appropriate license for this project: ",
@@ -49,8 +53,10 @@ inquirer.prompt([
             "Mozilla",
             "Open"
         ],
-    }, 
-    
+    },
+
+    // userName email projName description motivation intention problemSolver description license
+
     // {
     //     type: 'input',
     //     message: "Project name",
@@ -74,12 +80,12 @@ inquirer.prompt([
     //populate readme with answers
     .then(answers => {
         console.log(answers)
-        console.log(`Welcome ${answers.name}, of the languages you listed, ${answers.languages}, we prefer to communicate in ${answers.preferCommType}, too`)
-        fs.writeFile(`${answers.name}.json`, JSON.stringify(answers), function (err) {
+        fs.writeFile(`${answers.userName}.json`, JSON.stringify(answers,null,4), function (err) {
             if (err) {
                 throw err
             }
         })
     })
 
+    create
 
