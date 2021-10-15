@@ -1,0 +1,15 @@
+{
+    "userName": "madeup",
+    "email": "email.email.email",
+    "projName": "ReadMe Generator",
+    "description": "A quick, easy way to generate a ReadMe",
+    "motivation": "I was motivated to create this because I am always forgetting to keep my ReadMe up to date or detailed enough for outside viewers to get a quick grasp on my project",
+    "intention": "Keeping ReadMe up to date",
+    "problemSolver": "This solves my lack of rememdering to update while working",
+    "learned": "I learned several new node function types",
+    "standOut": "The ability to answer a few questions and come away with a full ReadMe",
+    "installation": "",
+    "contributors": "",
+    "features": "",
+    "license": "Mozilla"
+}

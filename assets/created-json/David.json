@@ -1,0 +1,10 @@
+{
+    "userName": "David",
+    "projName": "ReadMe Generator",
+    "description": "A quick easy way to generate a ReadMe",
+    "motivation": "always forgetting to keep ReadMe up-to-date or detailed enough for outside viewers to get a quick grasp on project",
+    "intention": "Keeping ReadMe up to date",
+    "problemSolver": "Lack of memory while working",
+    "learned": "several new function types in node",
+    "license": "Open"
+}
